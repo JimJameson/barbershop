@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="inner-page">
     <!--Шапка сайта-->
     <header class="main-header">
       <!--Главная панель навигации-->
@@ -85,51 +91,92 @@
         </ul>
       </section>
       <section class="product-info">
-          <h2 class="visually-hidden">Описание товара</h2>
-          <p class="product-availability">Есть в наличии</p>
-          <p class="product-article">Артикул: dexter-ae</p>
-          <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          <p class="product-price">
-              <b>2 900 ₽</b>
-              <a href="#" class="button">Купить</a>
-          </p>
-          <h3>В набор входят:</h3>
-          <ul>
-              <li>Средство для умывания (50 мл)</li>
-              <li>Увлажняющий крем (50 мл)</li>
-              <li>Крем для бритья (50 мл)</li>
-              <li>Крем после бритья, шампунь (50 мл)</li>
-              <li>Удобная кожаная косметичка</li>
-          </ul>
+        <h2 class="visually-hidden">Описание товара</h2>
+        <p class="product-availability">Есть в наличии</p>
+        <p class="product-article">Артикул: dexter-ae</p>
+        <p class="product-text">
+          Travel Kit – необходимый аксессуар во время любого путешествия. В
+          аккуратной кожаной сумке находится все, что нужно для бритья и ухода
+          за кожей во время рабочей поездки или отдыха: средство для умывания,
+          увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор
+          также может стать отличным подарком.
+        </p>
+        <p class="product-price">
+          <b>2 900 ₽</b>
+          <a href="#" class="button">Купить</a>
+        </p>
+        <h3>В набор входят:</h3>
+        <ul>
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
       </section>
     </main>
-     <!--Главный подвал сайта-->
-     <footer class="main-footer">
-        <p class="main-footer-contacts">
-          Барбершоп "Бородинский" <br />
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br />
-          <a href="map.html">Как нас найти?</a> <br />
-          Телефон: +7 (812) 666-02-66
+    <!--Главный подвал сайта-->
+    <footer class="main-footer">
+      <p class="main-footer-contacts">
+        Барбершоп "Бородинский" <br />
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br />
+        <a href="map.html">Как нас найти?</a> <br />
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a href="#" class="social-button">Вконтакте</a></li>
+          <li><a href="#" class="social-button">Фейсбук</a></li>
+          <li><a href="#" class="social-button">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a href="google.com" class="button">Google</a>
+      </p>
+    </footer>
+    <!--Модальное окно "Личный кабинет"-->
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login" class="visually-hidden">Логин</label>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            class="login-icon-user"
+            placeholder="Логин"
+          />
         </p>
-        <div class="footer-social">
-          <b>Давайте дружить!</b>
-          <ul>
-            <li><a href="#" class="social-button">Вконтакте</a></li>
-            <li><a href="#" class="social-button">Фейсбук</a></li>
-            <li><a href="#" class="social-button">Инстаграмм</a></li>
-          </ul>
-        </div>
-        <p class="footer-copyright">
-          <b>Разработано:</b>
-          <a href="google.com" class="button">Google</a>
+        <p>
+          <label for="password" class="visually-hidden">Пароль</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="login-icon-password"
+            placeholder="Пароль"
+          />
         </p>
-      </footer>
-      <!--Модальное окно "Личный кабинет"-->
-      <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
-      </section>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              class="visually-hidden"
+            />
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a href="" class="restore">Я забыл пароль</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button type="button" class="modal-close">Закрыть</button>
+    </section>
   </body>
 </html>
