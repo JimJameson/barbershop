@@ -114,6 +114,10 @@ a {
 /*INDEX.HTML*/
 /*Преимущества и новости-------------------------------------------------*/
 
+.features {
+    margin-bottom: 80px;
+}
+
 .features-list {
     list-style: none;
 
@@ -135,6 +139,11 @@ a {
 }
 
 .index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+
     color: #000000;
 
     background-color: #f8f5f2;
@@ -148,20 +157,42 @@ a {
     line-height: 42px;
 }
 
+.news {
+    width: 380px;
+}
+
 .news-list {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 .news-list time {
     text-transform: none;
 }
 
+.gallery {
+    width: 300px;
+}
+
 .gallery-content {
+    margin: 0;
+    padding: 0;
+    
     background-color: #cccccc;
     border: 7px solid #ffffff;
 }
 
-/*Записаться--------------------------------------------------------------*/
+/*Контактная информация и Записаться--------------------------------------------------------------*/
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
+}
 
 .appointment-item input {
     font: inherit;
@@ -176,12 +207,44 @@ a {
 /*CATALOG.HTML------------------------------------------------------------*/
 /* Заголовок страницы----------------------------------------------------*/
 
+.inner-page .main-header {
+    margin-bottom: 55px;
+}
+
+.inner-page .main-header-logo {
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+
+.inner-page .main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.inner-page ,.user-navigation {
+    margin-left: auto;
+}
+
 .page-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    
     font-size: 30px;
     line-height: 42px;
 }
 
 /* Хлебные крошки------------------------------------------------------*/
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+
+    list-style: none;
+}
 
 .breadcrumbs a {
     color: #000000;
@@ -198,6 +261,10 @@ a {
 
 
 /*Фильтр товаров-------------------------------------------------------*/
+
+.filters {
+    width: 180px;
+}
 
 .filter fieldset {
     border: none;
@@ -226,13 +293,37 @@ a {
 
 /*Каталог товаров----------------------------------------------------------------*/
 
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog {
+    width: 700px;
+}
+
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+
     list-style: none;
 }
 
 .catalog-item {
+    
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -268,6 +359,9 @@ a {
 /*Пагинация--------------------------------------------------------*/
 
 .pagination-list {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -295,6 +389,10 @@ a {
 /*CATALOG-ITEM.HTML------------------------------------------------*/
 /*Карточка товара*/
 
+.product-photos {
+    width: 590px;
+}
+
 .product-photo-preview {
     list-style: none;
 }
@@ -305,6 +403,11 @@ a {
 
 .product-photo-full {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    width: 390px;
+    margin-left: 90px;
 }
 
 .product-article {
@@ -330,12 +433,30 @@ a {
 
 /*Футер------------------------------------------------------------*/
 .main-footer {
+    margin-top: 65px;
+    padding: 60px 0;
+   
     color: #ffffff;
 
     background-color: #212121;
     background-image: url("../img/Layer-dark.jpg");
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+
+.main-footer .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-contacts {
+    margin: 0;
+    width: 320px;
+    margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -349,6 +470,9 @@ a {
 }
 
 .footer-social {
+    margin: 0;
+    width: 140px;
+
     text-align: center;
 }
 
@@ -361,6 +485,10 @@ a {
 }
 
 .footer-copyright {
+    margin: 0;
+    width: 140px;
+    margin-left: auto;
+
     text-align: center;
 }
 .footer-copyright .button:hover,
