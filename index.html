@@ -134,7 +134,7 @@
             Пн-Пт: с 10:00 до 22:00 <br />
             Сб-Вс: с 10:00 до 19:00
           </p>
-          <a class="button" href="map.html">Как проехать</a>
+          <a class="button js-button-map" href="map.html">Как проехать</a>
           <a class="button" href="contacts.html">Обратная связь</a>
         </section>
         <!--Секция "Записаться"-->
@@ -227,8 +227,8 @@
     <!--Модальное окно "Личный кабинет"-->
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
         <p>
           <label for="login" class="visually-hidden">Логин</label>
           <input
@@ -269,10 +269,17 @@
     <!--Модальное окно "Карта"-->
     <section class="modal modal-map">
       <h2 class="visually-hidden">Ка до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.
+      2290604055775!2d30.322664776265007!3d59.93865149447239!2m3!1f0!2f0!3f0!
+      3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d82380
+      07!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIN
+      Ch0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e
+      0!3m2!1sru!2sus!4v1579179359666!5m2!1sru!2sus" width="766" height="560" 
+      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       <p>
         <img
           src="img/map.jpg"
-          width="780"
+          width="766"
           height="560"
           alt="Офис компании по адресу 
               ул. Большая Конюшенная 19/8, Санкт-Петербург"
@@ -280,5 +287,8 @@
       </p>
       <button type="button" class="modal-close">Закрыть</button>
     </section>
+    <div class="modal-overlay"></div>
+    <script src="popup.js"></script>
+
   </body>
 </html>
